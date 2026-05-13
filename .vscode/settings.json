@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "files.associations": {
+    "*.f3d": "zip",
+    "*.step": "ignore"
+  },
+  "markdown.preview.breaks": true
+}
