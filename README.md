@@ -12,3 +12,5 @@ Development of a 1-meter tall humanoid robot focused on mechanical efficiency an
 *   `01_Mechanical`: CAD files (.step) and technical drawings (.pdf).
 *   `02_Electronics`: Bill of Materials and schematics.
 *   `03_Software`: Logic for RPi 4B and MicroPython for RPi Pico.
+
+## 📚 References & Inspiration
