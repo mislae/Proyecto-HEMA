@@ -64,30 +64,12 @@ Para planos:
 * Nadie reemplaza archivos en silencio.
 
 ## Checklist tecnico antes de publicar una pieza
-### Geometria
-* ¿La pieza cumple su funcion mecanica?
-* ¿Hay interferencias visibles con piezas vecinas?
-* ¿La movilidad real coincide con el rango esperado?
-
-### Fabricacion
-* ¿La pieza se puede imprimir sin soportes excesivos?
-* ¿La orientacion de impresion favorece la resistencia?
-* ¿La tolerancia de ensamble esta justificada?
-
-### Ensamble
-* ¿Se puede montar con herramientas normales?
-* ¿La tornilleria esta definida?
-* ¿La pieza puede desmontarse para mantenimiento?
+Esta validacion se ejecuta en `CHECKLIST_OPERATIVA.md`.
+No dupliques esa lista aqui para evitar versiones inconsistentes.
 
 ## Parametros de impresion 3D que deben documentarse
-Para cada pieza estructural se debe registrar:
-* material
-* altura de capa
-* numero de perímetros
-* relleno
-* soportes
-* orientacion de impresion
-* zona critica de carga
+Se documentan en `PARAMETROS_IMPRESION_3D.md`.
+Este archivo solo define el flujo y la responsabilidad de hacerlo.
 
 ## Que debe existir en un hardware open-source serio
 Este proyecto deberia terminar con al menos:

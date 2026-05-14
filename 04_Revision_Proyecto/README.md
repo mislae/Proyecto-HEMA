@@ -1,17 +1,20 @@
 # Documentacion tecnica - Proyecto HEMA
 
-Esta carpeta agrupa la documentacion de apoyo para la fase mecanica del proyecto.
+Esta carpeta contiene documentacion de trabajo para la fase mecanica del proyecto.
 
-## Archivos
-- `REVISION_TECNICA_HEMA.md`: resumen tecnico del estado del repositorio y plan de ataque.
-- `GUIA_MECANICA_Y_FLUJO.md`: flujo de trabajo para colaboracion, versionado y publicacion de piezas.
-- `CHECKLIST_OPERATIVA.md`: lista de verificacion antes de exportar o cerrar una revision.
-- `GUIA_ENSAMBLAJE.md`: orden recomendado de ensamblaje del conjunto pie-tobillo.
-- `PARAMETROS_IMPRESION_3D.md`: campos minimos que deben documentarse para imprimir piezas estructurales.
+## Uso diario
+- `CHECKLIST_OPERATIVA.md`: control rapido antes de exportar, fabricar o cerrar una revision.
+- `GUIA_ENSAMBLAJE.md`: secuencia de montaje y criterios de aceptacion del conjunto pie-tobillo.
+- `PARAMETROS_IMPRESION_3D.md`: registro minimo para piezas impresas estructurales.
 
-## Uso recomendado
-Antes de exportar una nueva pieza o cerrar una revision, revisar como minimo:
-1. `CHECKLIST_OPERATIVA.md`
-2. `GUIA_MECANICA_Y_FLUJO.md`
-3. `PARAMETROS_IMPRESION_3D.md` si la pieza es impresa en 3D
-4. `GUIA_ENSAMBLAJE.md` si la pieza afecta el conjunto fisico
+## Uso de coordinacion
+- `GUIA_MECANICA_Y_FLUJO.md`: reglas de colaboracion, versionado CAD y publicacion.
+
+## Uso historico
+- `REVISION_TECNICA_HEMA.md`: diagnostico inicial que explica por que se ordeno esta carpeta.
+
+## Orden recomendado para trabajar
+1. Planificar cambio con `GUIA_MECANICA_Y_FLUJO.md`.
+2. Validar salida con `CHECKLIST_OPERATIVA.md`.
+3. Si hay pieza impresa, registrar en `PARAMETROS_IMPRESION_3D.md`.
+4. Si afecta montaje, revisar `GUIA_ENSAMBLAJE.md`.
