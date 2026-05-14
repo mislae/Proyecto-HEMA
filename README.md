@@ -49,9 +49,7 @@ Para mantener trazabilidad y evitar sobrescrituras, cada exportacion de modelo 3
 ### 1) Identificador fijo por pieza
 Cada pieza tiene un ID permanente que no cambia entre versiones.
 Ejemplos:
-* `ANK-001`: socket de tibia
-* `ANK-002`: balancin
-* `ANK-003`: abrazadera PVC
+* `ANK-001`: Tobillo
 
 | Campo        | Regla                                       | Ejemplo             |
 | :----------- | :------------------------------------------ | :------------------ |
