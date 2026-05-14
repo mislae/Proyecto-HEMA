@@ -39,3 +39,46 @@ The current concept uses a pushrod linkage to move the MG995 away from the foot 
 
 ### 7. Next iteration
 Prepare the servo horn and rocker arm geometry, then close the retention concept for the PVC tube before moving to a new prototype export.
+
+---
+
+## Version entry template (copy/paste)
+Use this template for each new exported revision.
+
+### Entry XX: [Part name] vX.Y.Z
+**Date:** YYYY-MM-DD
+**Author:** [Name]
+**Subsystem:** Mechanical / [Area]
+**Part ID:** [ANK-001]
+**Status:** Draft | In review | Released
+
+### 1. Previous version
+* [vX.Y.Z]
+
+### 2. Why this change
+* [Technical reason in one sentence]
+
+### 3. Change scope
+* [What changed in geometry/tolerance/interface]
+
+### 4. Version type
+* **Type:** Major | Minor | Patch
+* **Justification:** [Why this type applies]
+
+### 5. Expected impact
+* [Assembly impact]
+* [Manufacturing impact]
+* [Validation impact]
+
+### 6. Pending validation
+* [ ] Interference check completed
+* [ ] Full travel check completed
+* [ ] Fasteners/retention defined
+* [ ] BOM impact updated (if needed)
+
+### 7. Exported files
+* [HEMA_ANK-001_socket-tibia_vX.Y.Z.step]
+* [HEMA_ANK-001_socket-tibia_vX.Y.Z.pdf]
+
+### 8. Next action
+* [Single clear next technical step]

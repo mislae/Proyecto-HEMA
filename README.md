@@ -43,6 +43,42 @@ Los entregables mecanicos estan organizados para revisarse desde un CAD o visor 
 * `03_Software`: carpeta reservada para el futuro desarrollo de control.
 * `04_Revision_Proyecto`: revision tecnica, guia de trabajo, checklist y documentacion de apoyo.
 
+## Politica de versionado CAD (oficial)
+Para mantener trazabilidad y evitar sobrescrituras, cada exportacion de modelo 3D debe seguir este esquema.
+
+### 1) Identificador fijo por pieza
+Cada pieza tiene un ID permanente que no cambia entre versiones.
+Ejemplos:
+* `ANK-001`: socket de tibia
+* `ANK-002`: balancin
+* `ANK-003`: abrazadera PVC
+
+### 2) Version semantica por archivo
+Cada exportacion usa `vMayor.Menor.Parche`:
+* **Mayor (X.0.0):** cambia funcion mecanica o interfaces de ensamble.
+* **Menor (0.X.0):** ajusta tolerancias o cotas sin romper interfaces.
+* **Parche (0.0.X):** correccion menor sin impacto funcional del conjunto.
+
+### 3) Formato de nombre obligatorio
+Usar este formato para STEP y planos asociados:
+* `HEMA_[ID-Pieza]_[NombreCorto]_vX.Y.Z.step`
+* `HEMA_[ID-Pieza]_[NombreCorto]_vX.Y.Z.pdf`
+
+Ejemplo:
+* `HEMA_ANK-001_socket-tibia_v2.1.0.step`
+
+### 4) Reglas de publicacion
+* Nunca sobrescribir una version anterior.
+* Cada version nueva requiere una entrada en `01_Mechanical/DESIGN_LOG.md`.
+* Si no pasa `04_Revision_Proyecto/CHECKLIST_OPERATIVA.md`, no se publica al repositorio.
+
+### 5) Estructura sugerida por pieza
+Para escalar el historico sin desorden:
+* `01_Mechanical/CAD/ANK-001/`
+* `01_Mechanical/CAD/ANK-002/`
+* `01_Mechanical/CAD/ANK-003/`
+Cada carpeta guarda todas las revisiones de la misma pieza.
+
 ## Roadmap inmediato
 1. Cerrar tolerancias y fijacion del tobillo.
 2. Completar BOM mecanico con tornilleria y elementos comerciales.
