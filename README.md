@@ -53,11 +53,26 @@ Ejemplos:
 * `ANK-002`: balancin
 * `ANK-003`: abrazadera PVC
 
+| Campo        | Regla                                       | Ejemplo             |
+| :----------- | :------------------------------------------ | :------------------ |
+| Prefijo      | Indica subsistema o zona mecanica           | `PIE`, `ANK`, `TIB` |
+| Numero       | Correlativo de 3 digitos dentro del prefijo | `001`, `002`, `003` |
+| Codigo final | `PREFIJO-NNN` y no cambia para esa pieza    | `PIE-001`           |
+
+Ejemplo para una pieza de pie:
+* `PIE-001` = pieza principal del pie
+
 ### 2) Version semantica por archivo
 Cada exportacion usa `vMayor.Menor.Parche`:
 * **Mayor (X.0.0):** cambia funcion mecanica o interfaces de ensamble.
 * **Menor (0.X.0):** ajusta tolerancias o cotas sin romper interfaces.
 * **Parche (0.0.X):** correccion menor sin impacto funcional del conjunto.
+
+| Tipo de version | Cuando usarla                                                         | Ejemplo (pieza pie)            |
+| :-------------- | :-------------------------------------------------------------------- | :----------------------------- |
+| Mayor `vX.0.0`  | Cambia geometria funcional, puntos de fijacion o interfaz de ensamble | `HEMA_PIE-001_pie_v2.0.0.step` |
+| Menor `v0.X.0`  | Ajusta tolerancias/cotas manteniendo interfaces                       | `HEMA_PIE-001_pie_v1.1.0.step` |
+| Parche `v0.0.X` | Correccion menor documental o de detalle sin impacto funcional        | `HEMA_PIE-001_pie_v1.1.1.step` |
 
 ### 3) Formato de nombre obligatorio
 Usar este formato para STEP y planos asociados:
@@ -66,6 +81,15 @@ Usar este formato para STEP y planos asociados:
 
 Ejemplo:
 * `HEMA_ANK-001_socket-tibia_v2.1.0.step`
+
+Tabla rapida de nombres validos para una sola pieza (`PIE-001`):
+
+| Situacion                   | Nombre recomendado             |
+| :-------------------------- | :----------------------------- |
+| Primera publicacion del pie | `HEMA_PIE-001_pie_v1.0.0.step` |
+| Ajuste de tolerancia        | `HEMA_PIE-001_pie_v1.1.0.step` |
+| Correccion menor            | `HEMA_PIE-001_pie_v1.1.1.step` |
+| Rediseno funcional del pie  | `HEMA_PIE-001_pie_v2.0.0.step` |
 
 ### 4) Reglas de publicacion
 * Nunca sobrescribir una version anterior.
